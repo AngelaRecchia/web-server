@@ -4,7 +4,7 @@ const loc = document.querySelector('#loc')
 const forecast = document.querySelector('#forecast')
 form.addEventListener('submit', (evt) => {
     evt.preventDefault()
-    fetch('http://localhost:3000/weather?search=' + input.value)
+    fetch('/weather?search=' + input.value)
         .then((response) => {
             response.json().then(data => {
                 if (!data.error) {
