@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../public/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+    <title>Weather</title>
+</head>
+<body>
+
+    <main>
+        {{>header}}
+
+        <p>Use this site to get the weather!</p>
+
+        <form>
+            <input type="text" placeholder="Location" required >
+            <button>Search</button>
+        </form>
+
+        <div class="result">
+            <h3 id="loc">{{location}}</h3>
+            <p id="forecast"></p>
+        </div>
+        
+    </main>
+    
+    {{>footer}}
+</body>
+</html>
